@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Main Activity"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/SecondAButton"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к SecondActivity"
+        android:onClick="onClickSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/SerializeButton"
+        app:layout_constraintVertical_bias="0.5"
+
+        />
+    <Button
+        android:id="@+id/SerializeButton"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к SerializeActivity"
+        android:onClick="onClickSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/SecondAButton"
+        app:layout_constraintBottom_toBottomOf="@id/ParceLabelAndSerializeButton"
+        app:layout_constraintVertical_bias="0.5"
+        />
+    <Button
+        android:id="@+id/ParceLabelAndSerializeButton"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к Parcelabel/Serialize"
+        android:onClick="onClickSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/SerializeButton"
+        app:layout_constraintBottom_toBottomOf="@id/ActivityResultButton"
+        app:layout_constraintVertical_bias="0.5"
+        />
+    <Button
+        android:id="@+id/ActivityResultButton"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к ActivityResult"
+        android:onClick="onClickSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ParceLabelAndSerializeButton"
+        app:layout_constraintBottom_toBottomOf="@id/FstActivityButton"
+        app:layout_constraintVertical_bias="0.5"
+        />
+    <Button
+        android:id="@+id/FstActivityButton"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к
+        FstActivity"
+        android:onClick="onClickSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ActivityResultButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
